@@ -23,15 +23,16 @@
 <main>
   <p class="muted"><a href="./">n0wst4ndup YouTube 파이프라인</a></p>
   <h1>개인정보처리방침</h1>
-  <p class="muted">시행일 2026-11-03</p>
+  <p class="muted">시행일 2026-11-04</p>
 
   <h2>1. 이 도구와 사용자</h2>
   <p>이 도구는 YouTube 채널 @n0wst4ndup의 주인 한 사람이 자기 채널에 영상을 올리고 자기 채널의 통계를 읽는 데 쓰는 개인용 도구입니다. 이 도구는 YouTube API 서비스를 사용합니다.</p>
 
   <h2>2. 접근하는 정보</h2>
   <ul>
-    <li><strong>인증 토큰</strong>: 채널 주인이 허용한 권한(영상 올리기 <code>youtube.upload</code>, 통계 읽기 <code>yt-analytics.readonly</code>)으로 Google에서 받은 토큰</li>
+    <li><strong>인증 토큰</strong>: 채널 주인이 허용한 권한(영상 올리기 <code>youtube.upload</code>, 채널 정보 읽기 <code>youtube.readonly</code>, 통계 읽기 <code>yt-analytics.readonly</code>)으로 Google에서 받은 토큰</li>
     <li><strong>올리는 영상</strong>: 채널 주인이 만든 영상 파일과 제목·설명·태그</li>
+    <li><strong>채널 정보</strong>: 이 채널의 이름 같은 기본 정보. 통계 API가 채널 정보 읽기 권한을 함께 요구합니다</li>
     <li><strong>채널 통계</strong>: 이 채널 영상의 조회수, 참여 조회수, 시청 시간, 평균 시청 비율, 좋아요·댓글·공유 수, 구독자 증감 같은 집계 수치</li>
   </ul>
   <p>다른 사람의 계정이나 채널, 댓글 내용, 시청자 개인을 알아볼 수 있는 정보에는 접근하지 않습니다.</p>
@@ -57,10 +58,10 @@
   <hr>
 
   <h2>Privacy Policy (English)</h2>
-  <p class="muted">Effective 2026-11-03</p>
+  <p class="muted">Effective 2026-11-04</p>
   <ul>
     <li><strong>Who uses it</strong>: only the owner of the YouTube channel @n0wst4ndup, to upload their own videos and read their own channel's analytics. This tool uses YouTube API Services.</li>
-    <li><strong>Data accessed</strong>: the OAuth token for the scopes the owner granted (<code>youtube.upload</code>, <code>yt-analytics.readonly</code>); the owner's video files with their titles, descriptions and tags; aggregate statistics of the owner's videos (views, engaged views, watch time, average percentage viewed, likes, comments, shares, subscribers gained and lost). It does not access other accounts or channels, comment text, or information that identifies individual viewers.</li>
+    <li><strong>Data accessed</strong>: the OAuth token for the scopes the owner granted (<code>youtube.upload</code>, <code>youtube.readonly</code>, <code>yt-analytics.readonly</code>); the owner's video files with their titles, descriptions and tags; basic information about the owner's channel, such as its name (the Analytics API also requires the read-only channel scope); aggregate statistics of the owner's videos (views, engaged views, watch time, average percentage viewed, likes, comments, shares, subscribers gained and lost). It does not access other accounts or channels, comment text, or information that identifies individual viewers.</li>
     <li><strong>Use and sharing</strong>: used only to upload videos and to keep statistics records on the owner's computer for planning future videos. An AI tool the owner uses (Anthropic's Claude) reads these records to analyze them. Otherwise the data is not sold, not used for advertising, and not shared with anyone.</li>
     <li><strong>Storage and deletion</strong>: tokens and records are stored only on the owner's computer; there is no server. A token stops working when access is revoked or the token file is deleted. Records stay on the owner's computer until the owner deletes them.</li>
     <li><strong>Revoking access</strong>: at any time on the <a href="https://security.google.com/settings/security/permissions">Google security settings page</a>.</li>
